@@ -1,0 +1,25 @@
+{
+  "name": "Hot_Restaurant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hotEats.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jebright2/Hot_Restaurant.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jebright2/Hot_Restaurant/issues"
+  },
+  "homepage": "https://github.com/jebright2/Hot_Restaurant#readme"
+}
