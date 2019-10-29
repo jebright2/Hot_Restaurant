@@ -12,6 +12,15 @@
         integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
     <!-- Local Css -->
     <!-- <link rel='stylesheet' href='assests/css/style.css'> -->
+    <style>
+        .jumbotron {
+            text-align: center;
+        }
+
+        .form-group {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,16 +28,43 @@
     <div class='container-fluid'>
         <div class='row'>
             <div class='col-lg-12'>
-                    <div class="jumbotron">
-                            <h1 class="display-4">Hot Restaurant</h1>
-                            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                            <hr class="my-4">
-                            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                            <a class="btn btn-primary btn-lg" href="#" role="button">View Tables</a>
-                            <button type="button" class="btn btn-danger btn-lg">Make Reservation</button>
-                          </div>
+                <div class="jumbotron">
+                    <h1 class="display-4">Hot Restaurant</h1>
+                    <hr class="my-4">
+                    <p>Make your reservation.</p>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">View Tables</a>
+                    <button type="button" class="btn btn-light btn-lg">Home</button>
+                </div>
             </div>
         </div>
+
+        <div class='row'>
+            <div class='col-md-4'></div>
+            <div class='col-md-4'>
+                <form>
+                    <div class="form-group">
+                        <label for="nameInput">Name</label>
+                        <input type="name" class="form-control" id="nameInput" aria-describedby="nameHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneInput">Phone Number</label>
+                        <input type="text" class="form-control" id="phoneInput" aria-describedby="phoneHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput">Email</label>
+                        <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="uniqueidInput">Unique ID</label>
+                        <input type="id" class="form-control" id="uniqueidInput" aria-describedby="idHelp">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class='col-md-4'></div>
+        </div>
+
+
     </div>
     <!-- Footer Scripts -->
     <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'
