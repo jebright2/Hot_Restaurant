@@ -13,10 +13,14 @@
     <!-- Local Css -->
     <!-- <link rel='stylesheet' href='assests/css/style.css'> -->
     <style>
-            .jumbotron {
-                text-align: center;
-            }
-        </style>
+        .jumbotron {
+            text-align: center;
+        }
+
+        #card1 {
+            padding-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,15 +28,45 @@
     <div class='container-fluid'>
         <div class='row'>
             <div class='col-lg-12'>
-                    <div class="jumbotron">
-                            <h1 class="display-4">Hot Restaurant</h1>
-                            <hr class="my-4">
-                            <p>Current Reservations and Waiting List</p>
-                            <a class="btn btn-light btn-lg" href="#" role="button">Home</a>
-                            <button type="button" class="btn btn-danger btn-lg">Make Reservation</button>
-                          </div>
+                <div class="jumbotron">
+                    <h1 class="display-4">Hot Restaurant</h1>
+                    <hr class="my-4">
+                    <p>Current Reservations and Waiting List</p>
+                    <a class="btn btn-light btn-lg" href="#" role="button">Home</a>
+                    <button type="button" class="btn btn-danger btn-lg">Make Reservation</button>
+                </div>
             </div>
         </div>
+
+        <div class='row'>
+            <div class='col-lg-12' id="card1">
+                <div class="card">
+                    <div class="card-header">
+                        Current Reservations
+                    </div>
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <p>1: Vincent</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='row'>
+                <div class='col-lg-12'>
+                    <div class="card">
+                        <div class="card-header">
+                            Waiting List
+                        </div>
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>1: Jim</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
     <!-- Footer Scripts -->
     <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'
