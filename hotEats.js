@@ -5,6 +5,9 @@ var path = require("path");
 var app = express();
 var PORT = 3000;
 
+var tableData = require("tableData.js");
+var waitData = require("waitData.js");
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -49,6 +52,21 @@ app.post("/api/reserve", function(req, res) {
 
   res.json(newCharacter);
 });
+
+//tableData
+//waitData
+app.post("/api/tables", function(req, res) {
+ 
+  if (tableData.length < 5) {
+    tableData.push(req.body);
+    console.log("Reservation successful!");
+  }
+  else {
+    waitData.push(req.body);
+    console.log("Entry has been waitlisted!");
+  }
+});
+
 
 app.listen(PORT, function() {
   console.log("App listening on PORT " + PORT);
